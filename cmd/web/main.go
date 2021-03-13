@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 	"time"
-	"ullibniss/pkg/config"
-	"ullibniss/pkg/handlers"
-	"ullibniss/pkg/render"
+	"github.com/ullibniss/booking/pkg/config"
+	"github.com/ullibniss/booking/pkg/handlers"
+	"github.com/ullibniss/booking/pkg/render"
 )
 
 var app config.AppConfig

@@ -7,8 +7,8 @@ import (
 	"log"
 	"net/http"
 	"path/filepath"
-	"ullibniss/pkg/config"
-	"ullibniss/pkg/models"
+	"github.com/ullibniss/booking/pkg/config"
+	"github.com/ullibniss/booking/pkg/models"
 )
 
 

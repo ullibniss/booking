@@ -1,4 +1,4 @@
-module ullibniss
+module github.com/ullibniss/booking
 
 go 1.15
 

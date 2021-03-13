@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/go-chi/chi/v5"
 	"net/http"
-	"ullibniss/pkg/config"
-	"ullibniss/pkg/handlers"
+	"github.com/ullibniss/booking/pkg/config"
+	"github.com/ullibniss/booking/pkg/handlers"
 )
 
 func routes(app *config.AppConfig) http.Handler {

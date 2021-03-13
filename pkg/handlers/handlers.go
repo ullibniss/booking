@@ -2,9 +2,9 @@ package handlers
 
 import (
 	"net/http"
-	"ullibniss/pkg/config"
-	"ullibniss/pkg/models"
-	"ullibniss/pkg/render"
+	"github.com/ullibniss/booking/pkg/config"
+	"github.com/ullibniss/booking/pkg/models"
+	"github.com/ullibniss/booking/pkg/render"
 )
 
 
