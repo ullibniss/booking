@@ -8,6 +8,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker-bs4.min.css">
         <title>Hello, world!</title>
 
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+        <style>
+            /* override styles here */
+            .notie-container {
+                box-shadow: none;
+            }
+        </style>
+
         <style>
             .my-footer {
                 height: 5em;
@@ -109,6 +117,7 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+        <script src="https://unpkg.com/notie"></script>
         <script>
             console.log("I am printing from javascript");
 
@@ -132,6 +141,15 @@
                     })
             })()
 
+            document.getElementById("colorButton",addEventListener("click", function (){
+                notify("LOX", "success")
+            }))
+            function notify(msg, msgType) {
+                notie.alert({
+                    type: msgType, // optional, default = 4, enum: [1, 2, 3, 4, 5, 'success', 'warning', 'error', 'info', 'neutral']
+                    text: msg,
+                })
+            }
 
             const elem = document.getElementById('reservation-dates');
             const rangepicker = new DateRangePicker(elem, {
